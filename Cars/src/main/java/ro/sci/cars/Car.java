@@ -8,6 +8,16 @@ import ro.sci.cars.util.FuelType;
 public class Car implements Vehicle {
 
 
+
+
+
+
+
+
+
+
+
+
     private double fuelTankSize;
     private int gears;
     private double availableFuel;
