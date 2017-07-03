@@ -39,7 +39,7 @@ public class Main {
 
     private static void search(CarRepository carRepository) {
         System.out.println("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
-        System.out.println("List of all cars from repository OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO: ");
+        System.out.println("List of all cars from repository : ");
         for (Car car : carRepository.getAll()) {
             System.out.println(car.getMake());
 
