@@ -11,7 +11,7 @@ public class GroceryList {
     //diamond operator
     //
     //
-    //
+    //AM STERS COMENTARIU
     public void addGroceryItem(String item) {
         if (groceryList.contains(item))
             System.out.println("This item already exists in your list!!!");
