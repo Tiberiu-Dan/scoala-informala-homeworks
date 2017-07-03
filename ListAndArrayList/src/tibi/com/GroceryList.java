@@ -7,8 +7,11 @@ import java.util.ArrayList;
  */
 public class GroceryList {
 
-    private ArrayList<String> groceryList = new ArrayList<String>();
-
+    private ArrayList<String> groceryList = new ArrayList<>();
+    //diamond operator
+    //
+    //
+    //
     public void addGroceryItem(String item) {
         if (groceryList.contains(item))
             System.out.println("This item already exists in your list!!!");
