@@ -4,6 +4,7 @@ import tibi.sci.rental.domain.Car;
 import tibi.sci.rental.util.FuelType;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -33,6 +34,12 @@ public class CarRepositoryImp implements CarRepository {
     }
 
     public void delete(Car car) {
+        Iterator iterator = cars.iterator();
+        while (iterator.hasNext()){
+            if (iterator.next().equals(car)){
+                iterator.remove();
+            }
+        }
 
     }
 

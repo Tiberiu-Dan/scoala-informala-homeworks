@@ -25,7 +25,7 @@ public class SearchServiceImp implements SearchService {
      */
 
     public List<Car> findCarsByMake(String make) {
-        List<Car> foundCars = new ArrayList<Car>();
+        List<Car> foundCars = new ArrayList<>();
 
         for (Car car : carRepository.getAll()) {
             if (car.getMake().equalsIgnoreCase(make)) {
@@ -44,7 +44,7 @@ public class SearchServiceImp implements SearchService {
      * @return list of found cars.
      */
     public List<Car> findCarsByMakeAndModel(String make, String model) {
-        List<Car> foundCars = new ArrayList<Car>();
+        List<Car> foundCars = new ArrayList<>();
 
         for (Car car : carRepository.getAll()) {
             if ((car.getModel().equalsIgnoreCase(model)) && (car.getMake().equalsIgnoreCase(make))) {
@@ -68,7 +68,7 @@ public class SearchServiceImp implements SearchService {
      * @return list of found cars
      */
     public List<Car> findCarsByMultipleCategories(String make, String model, String color, int seats,int doors) {
-        List<Car> foundCars = new ArrayList<Car>();
+        List<Car> foundCars = new ArrayList<>();
 
         for (Car car : carRepository.getAll()) {
             if ((car.getModel().equalsIgnoreCase(model)) && (car.getMake().equalsIgnoreCase(make))
