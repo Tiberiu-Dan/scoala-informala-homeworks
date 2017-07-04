@@ -26,6 +26,7 @@ public class Main {
         carRepository.add(Dacia);
         carRepository.add(Opel);
         carRepository.add(Renault);
+        carRepository.delete(Dacia);
 
 
        /* CustomerImp andrei = new CustomerImp("Andrei",16,new Address("Mehedinti","Cluj-Napoca","Cluj-Napoca","403132"));
