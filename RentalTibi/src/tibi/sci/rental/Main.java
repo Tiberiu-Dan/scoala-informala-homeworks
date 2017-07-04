@@ -2,13 +2,13 @@ package tibi.sci.rental;
 
 import tibi.sci.rental.domain.Car;
 import tibi.sci.rental.domain.CustomerImp;
-import tibi.sci.rental.domain.PersonImp;
 import tibi.sci.rental.repository.CarRepository;
 import tibi.sci.rental.repository.CarRepositoryImp;
 import tibi.sci.rental.service.SearchServiceImp;
 import tibi.sci.rental.util.FuelType;
 import tibi.sci.rental.util.VehiculeCategory;
 import tibi.sci.rental.domain.Address;
+
 
 
 import java.util.List;
@@ -28,12 +28,16 @@ public class Main {
         carRepository.add(Renault);
 
 
-
-        CustomerImp tibi = new CustomerImp("Tibi",23,new Address("Calea Floresti","Cluj-Napoca","RO","400333"));
+       /* CustomerImp andrei = new CustomerImp("Andrei",16,new Address("Mehedinti","Cluj-Napoca","Cluj-Napoca","403132"));
+        System.out.println(andrei.formatForMailing());*/
+        CustomerImp tibi = new CustomerImp("Tibi",24,new Address("Calea Floresti","Cluj-Napoca","RO","400333"));
         System.out.println(tibi.formatForMailing());
 
-        search(carRepository);
+      //  CustomerImp dan = new CustomerImp("Dan",76,new Address("Principala","Iara","Cluj","401315"));
+      //  System.out.println((dan.formatForMailing()));
 
+
+        search(carRepository);
 
     }
 
